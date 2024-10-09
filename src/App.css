@@ -1,0 +1,66 @@
+/* General styles for sections */
+section {
+  margin: 40px 0;
+  padding: 20px;
+}
+
+/* Layout for the modules on the home page */
+.home-page-container {
+  display: flex;
+  justify-content: space-between; /* Ensures equal spacing between modules */
+  gap: 20px; /* Gap between modules */
+  flex-wrap: wrap; /* Allows modules to wrap on smaller screens */
+  padding: 20px;
+}
+
+/* Each module will occupy equal width */
+.module {
+  flex: 1;
+  min-width: 300px; /* Minimum width of a module */
+  max-width: 450px; /* Maximum width of a module */
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Adjust to the module's width */
+  margin: 0 auto;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Full width inside the form */
+}
+
+button {
+  padding: 10px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width button */
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .home-page-container {
+    flex-direction: column; /* Stack modules vertically on small screens */
+    gap: 20px;
+  }
+
+  .module {
+    max-width: 100%; /* Make modules full-width on smaller screens */
+  }
+}

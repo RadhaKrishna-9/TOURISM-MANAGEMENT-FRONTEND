@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.transport-container {
+    background-image: url('https://wallpaperaccess.com/full/4446780.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(9, 243, 255);
+    text-shadow: 0 0 10px rgba(11, 227, 255, 0.96);
+    position: relative;
+    overflow: hidden;
+}
+
+h2, p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.booking-form {
+    background: rgba(0, 0, 0, 0.5); /* Decreased opacity for the booking form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 204, 255, 0.5), 0 0 20px rgba(0, 204, 255, 0.5), 0 0 30px rgba(0, 204, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 204, 255, 1), 0 0 30px rgba(0, 204, 255, 1), 0 0 40px rgba(0, 204, 255, 1);
+    }
+}
+
+.input-field {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid rgba(6, 201, 255, 0.7);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.93); /* Maintain transparency for input fields */
+    color: rgba(255, 255, 255, 0);
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: rgba(0, 204, 255, 1);
+}
+
+.booking-button {
+    background: rgba(0, 204, 255, 0.8);
+    color: rgba(255, 255, 255, 0); /* Changed opacity to 1 for better visibility */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.booking-button:hover {
+    background: rgba(0, 204, 255, 1);
+}
+
+.submission-details {
+    background: rgba(0, 0, 0, 0.7); /* Background for booking details */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: rgb(6, 205, 255);
+    text-align: center; /* Center the text */
+}

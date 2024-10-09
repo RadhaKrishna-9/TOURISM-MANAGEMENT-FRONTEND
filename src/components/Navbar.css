@@ -1,0 +1,90 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #282c34;
+}
+
+/* Links list for the navigation */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each navigation link */
+.nav-links li {
+  margin: 0 15px;
+}
+
+/* Navigation link style */
+.nav-links a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+  color: #21a1f1; /* Change link color on hover */
+}
+
+/* Icon container list */
+.nav-icons {
+  list-style-type: column;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each icon list item */
+.nav-icons li {
+  margin-left: 15px;
+  display: flex;
+  align-items: center; /* Center icon and text vertically */
+}
+
+/* Icon link style */
+.nav-icons a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth transition for hover */
+  display: flex;
+  align-items: center; /* Align icon and text horizontally */
+}
+
+/* Space between icon and text */
+.nav-icons i {
+  margin-right: 5px;
+  font-size: 20px; /* Icon size */
+}
+
+/* Hover effect for icon links */
+.nav-icons a:hover {
+  color: #21a1f1; /* Change icon color on hover */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Increase margin between links for mobile view */
+  }
+
+  .nav-icons {
+    margin-top: 10px;
+  }
+}
